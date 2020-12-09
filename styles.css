@@ -1,0 +1,146 @@
+/* mobile mode */
+body {
+    font-family: "Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", serif;
+    background: #F2F2F2;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+ 
+h1 {
+    margin: 5px;
+}
+
+title {
+    margin: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #20a8b4;
+    color: #fff;
+    font-size: 1em;
+    font-family: "Roboto", serif;
+    margin: 5px;
+    display:flex;
+    justify-content: center;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #ff5c0f;
+}
+
+.links a:hover {
+    color:#ff5c0f;
+}
+
+.links a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+.black {
+    color: #000
+}
+
+.orange {
+    color: #ff5c0f;
+}
+
+.blue {
+    color: #20a8b4;
+}
+
+img#coding {
+    visibility: hidden;
+}
+
+/* desktop mode adjustments*/
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .title {
+        display: flex;
+        justify-content: left;
+    }
+
+    #first {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    #second {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    button {
+        width: auto;
+    }
+
+    body {
+        margin: 0;
+        background-color: #fff;
+    }
+
+    #objectone {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    #objecttwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img#coding {
+        display: flex;
+        visibility: visible;
+        width: 550px;
+        height: 550px;
+        padding: 20px;
+    }
+}
